@@ -1,7 +1,7 @@
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'https://resume-analyzer-ai-0uv4.onrender.com/';
 
 const api = axios.create({
   baseURL: API_URL,
@@ -10,6 +10,7 @@ const api = axios.create({
   },
   timeout: 30000, // 30 seconds
 });
+fetch("https://resume-analyzer-ai-0uv4.onrender.com/analyze");
 
 // Request interceptor
 api.interceptors.request.use(
