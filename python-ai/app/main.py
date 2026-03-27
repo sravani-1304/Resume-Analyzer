@@ -29,3 +29,6 @@ async def analyze(request: AnalysisRequest):
 @app.get("/health")
 async def health():
     return {"status": "healthy", "service": "Resume AI Analyzer"}
+@app.get("/")
+async def root():
+    return {"message": "Resume AI Python Service is running", "status": "healthy"}
