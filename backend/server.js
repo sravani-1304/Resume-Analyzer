@@ -12,7 +12,10 @@ const resumeRoutes = require('./src/routes/resumeRoutes');
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001'],
+  origin: [
+    'http://localhost:3000',
+    'https://resume-analyzer-orcin-ten.vercel.app'
+  ],
   credentials: true
 }));
 
