@@ -6,7 +6,7 @@ const analyzeWithAI = async (resumeText, jobDescription) => {
       resume_text: resumeText,
       job_description: jobDescription
     }, {
-      timeout: 30000, // 30 second timeout
+      timeout: 90000, // 30 second timeout
       headers: {
         'Content-Type': 'application/json'
       }
