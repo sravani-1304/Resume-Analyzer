@@ -2,7 +2,9 @@
   "name": "resume-analyzer-frontend",
   "version": "2.0.0",
   "private": true,
-
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -12,20 +14,28 @@
     "@heroicons/react": "^2.0.18",
     "recharts": "^2.9.0",
     "react-dropzone": "^14.2.3",
-    "html2pdf.js": "^0.10.1",
-    "framer-motion": "^10.16.4"
+    "framer-motion": "^10.16.4",
+    "react-scripts": "5.0.1",
+    "tailwindcss": "^3.3.5",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31"
   },
-
-  "devDependencies": {
-    "react-scripts": "5.0.1"
-  },
-
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-
-  "engines": {
-    "node": "24.x"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
